@@ -18,5 +18,7 @@ test(5) :-
 	assertion(factorization:factor([5], 5)).
 test(6) :-
 	assertion(factorization:factor([2, 3], 6)).
+test(30) :-
+	assertion(factorization:factor([2, 3, 5], 30)).
 
 :- end_tests(factorization).

@@ -10,4 +10,9 @@ factor(Numbers, Product) :-
 	Numbers=[Product].
 
 factor(Numbers, Product) :-
-	Numbers=[2,3].
+	Numbers = [Smallest|Rest],
+	Quotient is Product / Smallest,
+	write(Smallest),
+	write(Quotient),
+	factor(Rest, Quotient).
+
